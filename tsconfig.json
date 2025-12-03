@@ -1,0 +1,19 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "nodenext", "nodetext": Unknown word.
+    "moduleResolution":"nodetext", "nodetext": Unknown word.
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "sourceMap": false,
+    "declaration": true,
+    "removeComments": true
+  },
+  "exclude": ["node_modules","dist"],
+  "include": ["src/**/*"]
+  }
