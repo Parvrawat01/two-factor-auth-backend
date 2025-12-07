@@ -1,11 +1,8 @@
-import dotenv from "dotenv";
+export default {
+  NODE_ENV: process.env.NODE_ENV,
+  PORT: process.env.PORT,
+  SERVER_REQUEST_TIMEOUT: 30 * 1000,
+  DATABASE_URI: process.env.DATABASE_URI
+  ACCESS_TOKEN_SECRET: process.env.ACCESS_TOKEN_SECRET  
+}
 
-dotenv.config();
-
-const envConfig = {
-  PORT: process.env.PORT || 5000,
-  DATABASE_URI: process.env.DATABASE_URI || "",
-  SERVER_REQUEST_TIMEOUT: Number(process.env.SERVER_REQUEST_TIMEOUT) || 30000,
-};
-
-export default envConfig;

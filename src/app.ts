@@ -5,6 +5,7 @@ import ApplicationException from "./exceptions/application.exception"
 const app: Application = express()
 
 app.use(express.json())
+app.use('v1/user', UserRouter)
 
 // 404 Handler
 app.use((req, res, next) => {
